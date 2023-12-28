@@ -557,7 +557,7 @@ def generate_pairs(employee_list):
 
     return pairs
 
-def main():
+def run():
     cleaned_employees = clean_duplicates(employees)
     pairs = generate_pairs(cleaned_employees)
 
@@ -567,6 +567,6 @@ def main():
         giant_name = pair[1]["name"]
         print(f"Dwarf: {dwarf_name}, Giant: {giant_name}")
 
-if __name__ == "__main__":
-    main()
+
+run()
 
